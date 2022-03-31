@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Treasure Hunt</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: "Script MT Bold";
+        }
+        header {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 18px;
+        }
+        li {
+            text-decoration: none;
+            list-style-position: inside;
+        }
+        .floatleft { float: left;
+            margin: 5px 50px 5px 5px; }
+
+    </style>
+</head>
+<body>
+    <header>Treasure Hunt Assignment</header>
+    <br>
+
+    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F29%2Fe9%2F6c%2F29e96ce1264f5fa515b91d23c142177b--i-spy-quizes.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Femilycsaunders%2Fwalter-wick-i-spy-books-photographer%2F&tbnid=FsJ8ROEzB6CNFM&vet=12ahUKEwi337r2ie_2AhWRY80KHYYMBQYQMygAegUIARDzAQ..i&docid=Suf3oM03OGBJEM&w=236&h=141&q=spy%20books&hl=en&ved=2ahUKEwi337r2ie_2AhWRY80KHYYMBQYQMygAegUIARDzAQ -->
+    <img src="ispy.png" usemap="#image_map" alt="tresurehunt" class="floatleft">
+    <map name="image_map">
+        <area id="t-rex" alt="trex" title="trex" href="#" coords="704,29 722,52 707,72 698,69 690,36 " shape="polygon">
+        <area id="pterodactyl" alt="pterodactyl" title="pterodactyl" href="#" coords="99,415 123,461 142,464 182,453 155,409 " shape="polygon">
+        <area id="brachiosaurus" alt="brachiosaurus" title="brachiosaurus" href="#" coords="548,108 545,138 587,161 583,126 " shape="polygon">
+        <area id="small_stegosaurus" alt="small_stegosaurus" title="small_stegosaurus" href="#" coords="394,26 438,8 443,17 438,37 426,48 395,39 " shape="polygon">
+        <area id="large_stegosaurus" alt="large_stegosaurus" title="large_stegosaurus" href="#" coords="189,336 200,351 228,348 291,307 283,288 248,277 214,300 207,329 " shape="polygon">
+        <area id="seahorse" alt="seahorse" title="seahorse" href="#" coords="77,241 86,261 112,266 132,258 153,221 149,198 131,185 119,183 92,219 " shape="polygon">
+        <area id="infinity" alt="infinity" title="infinity" href="#" coords="597,208 620,230 636,217 611,198 " shape="polygon">
+    </map>
+
+    <h1>Please find the following items in the image:</h1>
+    <ul>
+        <li id="lTRex">T-Rex</li>
+        <li id="lPtero">Pterodactyl</li>
+        <li id="lBrachio">Brachiosaurus</li>
+        <li id="lSmStego">Small Stegosaurus</li>
+        <li id="lLgStego">Large Stegosaurus</li>
+        <li id="lSeahorse">Seahorse</li>
+        <li id="lInfinity">Infinity</li>
+    </ul>
+
+    <p id="foundItem"></p>
+
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script defer src="code.js"></script>
+</body>
+</html>
