@@ -27,12 +27,8 @@ $("area#infinity").on("click", function() {
     $(lInfinity).css("text-decoration", "line-through");
 });
 
-function fountIt(description) {
-    $("p#foundItem").append(`You found the ${description}!<br>`);
-}
-
 function foundTRex() {
-    fountIt("T-Rex")
+    fountIt("T-Rex");
 }
 function foundPterodactyl() {
     fountIt("Pterodactyl")
@@ -51,4 +47,8 @@ function foundSeahorse() {
 }
 function foundInfinity() {
     fountIt("Infinity")
+}
+
+function fountIt(description) {
+    $("p#foundItem").append(`You found the ${description}!<br>`);
 }
