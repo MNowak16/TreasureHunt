@@ -31,7 +31,7 @@ function foundTRex() {
     fountIt("T-Rex");
 }
 function foundPterodactyl() {
-    fountIt("Pterodactyl")
+    fountIt("Pterodactyl");
 }
 function foundBrachiosaurus() {
     fountIt("Brachiosaurus")
